@@ -122,6 +122,7 @@ button {
 
     .myBtn {
         top: 43%;
+        left: 50%;
     }
 }
 
@@ -133,6 +134,7 @@ button {
 
     .myBtn {
         top: 43%;
+        left: 50%;
     }
 }
 
@@ -144,6 +146,7 @@ button {
 
     .myBtn {
         top: 43%;
+        left: 50%;
     }
 
 @media screen and (max-width: 910px) {
@@ -154,6 +157,7 @@ button {
     
         .myBtn {
             top: 40%;
+            left: 50%;
         }
 
 @media screen and (max-width: 600px) {
@@ -164,5 +168,17 @@ button {
         
         .myBtn {
                 top: 38%;
-            }       
+                left: 50%;
+            }  
+            
+@media screen and (max-width: 414px) {
+        .overlay p {
+            font-size: 60px;
+            font-weight: 700;
+        }
+                
+        .myBtn {
+            top: 38%;
+            left: 50%;
+        }                
 }
