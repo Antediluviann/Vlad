@@ -219,6 +219,161 @@ span {
 	color: #515255;
 }
 
+/* MY SKILLS STYLES */
+
+.container-skills {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container-skills .card,
+.container-skills .card-two {
+	position: relative;
+	width: 250px;
+	background: #515255;
+	display: flex;
+	justify-content: center;
+	height: 250px;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.container-skills .card:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255. .03);
+}
+
+.container-skills .box {
+	margin-top: 40px;
+}
+
+.percent {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 30px #0F1014;
+	background: #515255;
+	z-index: 1000;
+}
+
+.percent .number {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.percent .number h3 {
+	color: #777;
+	font-weight: 700;
+	font-size: 40px;
+	transition: 0.5s;
+}
+
+.card:hover .percent .number h3,
+.card-two:hover .percent .number h3 {
+	color: #777;
+	font-size: 60px;
+}
+
+.percent .number h3 span {
+	font-size: 24px;
+	color: #777;
+	transition: 0.5s;
+}
+
+.card:hover .percent .number h3,
+.card-two:hover .percent .number h3 {
+	color: #16E9D6;
+}
+
+.card:hover .percent .number h3 span,
+.card-two:hover .percent .number h3 span {
+	color: #fff;
+}
+
+.text {
+	position: relative;
+	color: #777;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+
+.card:hover .text,
+.card-two:hover .text {
+	color: #fff;
+}
+
+svg {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	z-index: 1000;
+}
+
+svg circle {
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #515255;
+	stroke-width: 10;
+	stroke-linecap: round;
+	transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 91) / 100);
+	stroke: #16E9D6;
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 83) / 100);
+	stroke: #16E9D6;
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 69) / 100);
+	stroke: #16E9D6;
+}
+
+.card-two:nth-child(1) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 85) / 100);
+	stroke: #16E9D6;
+}
+
+.card-two:nth-child(2) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 25) / 100);
+	stroke: #16E9D6;
+}
+
+.card-two:nth-child(3) svg circle:nth-child(2) {
+	stroke-dashoffset: calc(440 - (440 * 65) / 100);
+	stroke: #16E9D6;
+}
+
 /*MY STORY STYLES*/
 
 .story .container {
@@ -270,10 +425,6 @@ span {
 .fa-twitter:hover {
 	color: #fff;
 }
-
-/* SKILLS STYLES */
-
-
 
 /*MY HOBY STYLES*/
 
@@ -481,6 +632,19 @@ span {
 }
 
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+
+	.container-skills {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.container-skills .card, .container-skills .card-two {
+		margin-top: 2em;
+	}
+}
 
 @media screen and (max-width: 1024px) {
 
